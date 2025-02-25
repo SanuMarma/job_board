@@ -29,6 +29,7 @@ SECRET_KEY = 'django-insecure-tm9^s223bw3ajz+7)jwod9oeu23o815ugr5(gs_-dv14a)ud4-
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
+CSRF_TRUSTED_ORIGINS = ['https://job-board-bc02.onrender.com', 'https://*.127.0.0.1']
 
 
 # Application definition
