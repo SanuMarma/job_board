@@ -21,7 +21,7 @@ class Employer(models.Model):
     user = models.OneToOneField(User, on_delete = models.CASCADE)
     website = models.URLField("Link to website", max_length=250, blank=True)
     logo = models.ImageField(upload_to="employer/images/")
-    location = models.OneToOneField(Location, on_delete=models.CASCADE)
+    location = models.ForeignKey(Location, on_delete=models.CASCADE)
     
     def __str__(self):
         return f"{self.user.first_name} {self.user.last_name}"
